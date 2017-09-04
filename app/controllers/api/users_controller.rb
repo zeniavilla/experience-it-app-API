@@ -6,6 +6,7 @@ class Api::UsersController < ApplicationController
             render json: user
         else
             render json: { messages: user.errors }, status: 400
+        end
     end
 
     def show
